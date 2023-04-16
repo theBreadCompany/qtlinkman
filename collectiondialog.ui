@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CollectionAdder</class>
+ <widget class="QDialog" name="CollectionAdder">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>286</width>
+    <height>272</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="4" column="0">
+    <widget class="QRadioButton" name="newRadioButton">
+     <property name="text">
+      <string>new</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QLineEdit" name="newDescriptionEdit">
+     <property name="placeholderText">
+      <string>description</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="importNewEdit">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>ID</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QRadioButton" name="importRadioButton">
+     <property name="text">
+      <string>import</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1">
+    <widget class="QCheckBox" name="newPrivateCheckbox">
+     <property name="text">
+      <string>private</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QLineEdit" name="newNameEdit">
+     <property name="placeholderText">
+      <string>name</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="1">
+    <widget class="QCheckBox" name="newUnlistedCheckbox">
+     <property name="text">
+      <string>unlisted</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLineEdit" name="importTokenEdit">
+     <property name="placeholderText">
+      <string>token</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="1">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>CollectionAdder</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>CollectionAdder</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

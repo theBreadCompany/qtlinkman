@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>389</width>
+    <height>353</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="uploadTab">
+       <property name="minimumSize">
+        <size>
+         <width>359</width>
+         <height>253</height>
+        </size>
+       </property>
+       <attribute name="title">
+        <string>Upload</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="3" column="0" colspan="2">
+         <widget class="QCheckBox" name="sxcuSelfDestructBox">
+          <property name="text">
+           <string>self-destruct</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="collectionLabel">
+          <property name="text">
+           <string>Collection</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="5">
+         <widget class="QPushButton" name="uploadButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Upload</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="6">
+         <widget class="QGraphicsView" name="imageView"/>
+        </item>
+        <item row="6" column="4">
+         <widget class="QPushButton" name="importButton">
+          <property name="text">
+           <string>Open</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="5">
+         <widget class="QCheckBox" name="sxcuEmbeddableBox">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string>embeddable</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0" colspan="4">
+         <widget class="QPushButton" name="copyToClipboardButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Copy to clipboard</string>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4" colspan="2">
+         <widget class="QComboBox" name="collectionBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <item>
+           <property name="text">
+            <string>+ add entry</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>- remove entry</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="importTab">
+       <attribute name="title">
+        <string>Import</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <widget class="QLineEdit" name="importEdit">
+          <property name="placeholderText">
+           <string>Enter a sxcu URL to import and press enter.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QFrame" name="importDetailFrame">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QFormLayout" name="formLayout">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>ID / Title</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="sxcuIDLabel">
+             <property name="text">
+              <string>waiting</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>date</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="sxcuDateLabel">
+             <property name="text">
+              <string>waiting</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_6">
+             <property name="text">
+              <string>URL</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLabel" name="sxcuURLLabel">
+             <property name="text">
+              <string>waiting</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_8">
+             <property name="text">
+              <string>views</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLabel" name="sxcuViewsLabel">
+             <property name="text">
+              <string>waiting</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_10">
+             <property name="text">
+              <string>viewable</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLabel" name="sxcuViewableLabel">
+             <property name="text">
+              <string>waiting</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="label_12">
+             <property name="text">
+              <string>size</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QLabel" name="sxcuSizeLabel">
+             <property name="text">
+              <string>waiting</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="historyTab">
+       <attribute name="title">
+        <string>History</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="1" column="0">
+         <widget class="QTableView" name="tableView">
+          <property name="dragDropMode">
+           <enum>QAbstractItemView::DragOnly</enum>
+          </property>
+          <property name="showGrid">
+           <bool>false</bool>
+          </property>
+          <property name="cornerButtonEnabled">
+           <bool>false</bool>
+          </property>
+          <attribute name="horizontalHeaderCascadingSectionResizes">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderHighlightSections">
+           <bool>false</bool>
+          </attribute>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>389</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>.AppleSystemUIFont</family>
+    </font>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
