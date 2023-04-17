@@ -12,6 +12,21 @@ My goal was to create a simple app that can upload images to a server and mainta
 
 The reason for this is that I yet need to learn, especially C++ and C(ish) in general. This also means that this code, style etc. is far from perfect. I will improve this asap.
 
+## building and installing
+
+Dependencies: cmake, qt6 (either libs or [whole SDK](https://www.qt.io/download-qt-installer-oss))
+
+```bash
+git clone https://github.com/thebreadcompany/qtlinkman
+cd qtlinkman
+mkdir build
+cd build
+cmake ..
+make
+```
+
+The resulting executable, i.e. the .app for macOS, will be in the `build` directory.
+
 ## yet TODO
 
 - CLI version
